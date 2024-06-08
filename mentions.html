@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="logo">Dorine Moulin</a></li>
+        </ul>
+        <div class="menu">
+            <a href="#footer">Me contacter</a>
+        </div>
+        <div class="menu-hbg"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg></div>
+    </nav>
+
+
+    <!-- SCRIPT RESPONSIVE -->
+    <script>
+        const menuHamburger = document.querySelector(".menu-hbg");
+        const navLinks = document.querySelector(".menu");
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <section class="mention-texte">
+        <h2>Mentions légales</h2>
+
+        <div class="redaction">
+            <h3>
+                Conformément aux dispositions de l'article 6 de la Loi n° 2004-575 du 21 juin 2004 pour la confiance
+                dans l'économie numérique, nous vous informons que :
+                <br><br><br>Éditeur du site :
+            </h3>
+
+            <p>Dorine Moulin<br>[Insérer votre adresse]<br>0641240953<br>dorinemoulin2@orange.fr</p>
+
+            <h3>Directeur de la publication :</h3>
+
+            <p>Dorine Moulin</p>
+
+            <h3>Hébergeur du site :</h3>
+
+            <p>[Insérer le nom de l'hébergeur]<br>[Insérer l'adresse de l'hébergeur]</p>
+
+            <h3>Propriété intellectuelle :</h3>
+
+            <p>Le contenu de ce site internet, y compris les textes, les images, les vidéos, les logos et les éléments
+                graphiques, est la propriété de Dorine Moulin et est protégé par les lois sur la propriété
+                intellectuelle. Toute reproduction ou utilisation non autorisée de ce contenu est strictement interdite.
+            </p>
+
+            <h3>Responsabilité :</h3>
+
+            <p>Nous nous efforçons de fournir des informations exactes et à jour sur ce site internet, mais nous ne
+                garantissons pas l'exactitude, l'exhaustivité ou la pertinence de ces informations. Nous déclinons toute
+                responsabilité pour les dommages directs ou indirects résultant de l'utilisation de ce site ou de son
+                contenu.</p>
+
+            <h3>Liens vers des sites tiers :</h3>
+
+            <p>Ce site internet peut contenir des liens vers des sites web tiers. Ces liens sont fournis uniquement pour
+                votre commodité et ne constituent pas une approbation de ces sites web par Dorine Moulin. Nous déclinons
+                toute responsabilité pour le contenu de ces sites web tiers.</p>
+
+            <h3>Droit applicable et juridiction compétente :</h3>
+
+            <p>Tout litige concernant ce site internet sera régi par le droit français. En cas de litige, les tribunaux
+                français seront seuls compétents.</p>
+
+            <h3>Contact :</h3>
+
+            <p>Si vous avez des questions ou des préoccupations concernant ces mentions légales, veuillez nous contacter
+                à l'adresse suivante : dorinemoulin2@orange.fr.</p>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <div id="footer">
+        <h2>Me contacter</h2>
+        <div class="contact">
+            <div class="formulaire">
+                <input type="text" name="nom" placeholder="Votre nom">
+                <input type="email" email="nom" placeholder="Votre adresse mail">
+                <input type="text" name="objet" placeholder="Objet de la demande">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <button class="btn3" type="submit">Envoyer</button>
+            </div>
+            <div class="info">
+                <h4>Infos</h4>
+                <div class="coordonnees">
+                    <div class="mail">
+                        <img class="svg" src="assets/icones/envelope-regular.svg" alt="">
+                        <p>dorinemoulin2@orange.fr </p>
+                    </div>
+                    <div class="tel">
+                        <img class="svg" src="assets/icones//phone-solid.svg" alt="">
+                        <p>06 41 24 09 53 </p>
+                    </div>
+                    <div class="localisation">
+                        <img class="svg" src="assets/icones/location-dot-solid.svg" alt="">
+                        <p>Saint-Lô et Cherbourg </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENTIONS -->
+
+    <div class="mention-legale">
+        <div class="politique">
+            <ul>
+                <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="mention">
+            <ul>
+                <li><a href="mentions.html">Mentions légales</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

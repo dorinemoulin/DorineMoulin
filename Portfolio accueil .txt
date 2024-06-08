@@ -1,0 +1,459 @@
+Portfolio accueil: 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+<!-- NAVBAR -->
+<nav class="navbar">		
+    <ul>
+        <li><a href="index.html" class="logo">Dorine Moulin</a></li>
+    </ul>
+    <div class="menu">
+        <a href="#footer">Me contacter</a>
+    </div>
+    <div class="menu-hbg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
+</nav>
+
+
+<!-- SCRIPT RESPONSIVE -->
+<script>
+    const menuHamburger = document.querySelector(".menu-hbg");
+    const navLinks = document.querySelector(".menu");
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+<!-- PORTFOLIO -->
+
+<section class="rubrique-portfolio">
+    <h2>Mon Portfolio</h2>
+    <div class="menu-portfolio">
+        <button id="btn-graphisme">Graphisme</button>
+        <button id="btn-dessin">Dessin</button>
+        <button id="btn-entreprise">Entreprise</button>
+        <button id="btn-photographie-portfolio">Photographie</button>
+        <button id="btn-animation">Animation</button>
+
+        <div id="graphisme">
+            <div class="aller">
+                <div class="retour">
+                    <div class="fond-clair siema">
+                        <img src="assets/image/Projet/graphisme/graphisme1.jpeg" alt="">
+                        <img src="assets/image/Projet/graphisme/graphisme1.jpeg" alt=""> 
+                    </div>
+                    <div class="bouton2">
+                        <button id="avant"><</button>
+                        <button id="apres">></button>
+                    </div>
+                </div>
+
+                <div class="fond-fonce">
+                    <!-- <div class="texte-projet">
+                        <h3>English Game</h3>
+                        <p>Projet réalisé pour l’école, sur  une semaine par groupe, avec  un étudiant en marketing,  développement web et création  numérique. Nous devions réaliser  un jeu de société de A à Z en une  semaine, le tout en anglais</p>
+                    </div>   -->
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme12.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme6.jpg" alt="">
+                </div>
+                <div class="fond-clair siema2">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme2.jpg" alt="">
+                    <!-- <img src="assets/image/Projet/graphisme/au-format/graphisme3.jpg" alt=""> -->
+                    <!-- <img src="assets/image/Projet/graphisme/au-format/graphisme4.jpg" alt=""> -->
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme7.jpg" alt="">
+                </div>
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme8.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller-portrait">
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme9.jpg" alt="">
+                </div>
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/graphisme/au-format/graphisme14.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-clair">
+                    <!-- <img src="assets/image/Projet/graphisme/au-format/graphisme10.jpg" alt=""> -->
+                </div>
+                <div class="fond-fonce">
+                    <!-- <img src="assets/image/Projet/graphisme/au-format/graphisme8.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="dessin-portfolio">
+            <div class="aller-portrait">
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/Dessin/dessin1.jpg" alt="">
+                </div>
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet//Dessin/dessin5.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller-portrait">
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/Dessin/dessin2.jpg" alt="">
+                </div>
+                <div class="fond-clair">
+                    <img src="assets/image/Projet//Dessin/au-format/dessin20.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller-portrait">
+                <div class="fond-clair">
+                    <!-- <img src="assets/image/Projet/Dessin/au-format/dessin29.jpg" alt=""> -->
+                </div>
+                <div class="fond-fonce">
+                    <!-- <img src="assets/image/Projet//Dessin/dessin23.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="entreprise">
+            <div class="aller">
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/entreprise/au-format/entreprise1.jpg" alt="">
+                </div>
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/entreprise/au-format/entreprise2.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/entreprise/au-format/entreprise3.jpg" alt="">
+                </div>
+                <div class="fond-fonce">
+                    <!-- <img src="assets/image/Projet/entreprise/entreprise4.JPEG" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="photographie-portfolio">
+            <div class="aller">
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/photographie/au-format/photographie8.jpg" alt="">
+                </div>
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/photographie//au-format/photographie5.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/photographie/au-format/photographie9.jpg" alt="">
+                </div>
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/photographie/au-format/photographie7.jpg" alt="">
+                </div>
+            </div>
+            <div class="aller-portrait">
+                <div class="fond-clair">
+                    <img src="assets/image/Projet/photographie/au-format/photographie12.jpg" alt="">
+                </div>
+                <div class="fond-fonce">
+                    <img src="assets/image/Projet/photographie/au-format/photographie14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="animation">
+            <div class="aller">
+                <div class="fond-clair">
+                    <video src="control">
+                        <source src="assets/image/Projet/animation/animation1.mp4" type="video/mp4">
+                    </video>
+                    <!-- <img src="assets/image/Projet/animation/animation1.mp4" alt=""> -->
+                </div>
+                <div class="fond-fonce">
+                    <!-- <img src="assets/image/Projet/animation/animation2.mp4" alt=""> -->
+                </div>
+            </div>
+            <div class="aller">
+                <div class="fond-fonce">
+                    <!-- <img src="assets/image/Projet/animation/animation3.mp4" alt=""> -->
+                </div>
+                <div class="fond-clair">
+                    <!-- <img src="assets/image/Projet/photographie/photographie6.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script2.js"></script>
+
+
+<!-- CONTACT -->
+<div id="footer">
+    <h2>Me contacter</h2>
+        <div class="contact">
+            <div class="formulaire">
+                <input type="text" name="nom" placeholder="Votre nom">
+                <input type="email" email="nom" placeholder="Votre adresse mail">
+                <input type="text" name="objet" placeholder="Objet de la demande">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <button class="btn3" type="submit">Envoyer</button>
+            </div>
+            <div class="info">
+                <h4>Infos</h4>
+                <div class="coordonnees">
+                <div class="mail">
+                    <img class="svg" src="assets/icones/envelope-regular.svg" alt="">
+                    <p>dorinemoulin2@orange.fr </p>
+                </div>
+                <div class="tel">
+                    <img class="svg" src="assets/icones//phone-solid.svg" alt="">
+                    <p>06 41 24 09 53 </p>
+                </div>
+                <div class="localisation">
+                    <img class="svg" src="assets/icones/location-dot-solid.svg" alt="">
+                    <p>Saint-Lô et Cherbourg </p>
+                </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- MENTIONS -->
+
+<div class="mention-legale">
+    <div class="politique">
+        <ul>
+		<li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        </ul>
+    </div>
+    <div class="mention">
+        <ul>
+		<li><a href="mentions.html">Mentions légales</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/assets/js/siema.min.js"></script>
+    <script> const siemaInstance = new Siema({
+        selector: ".siema",
+        duration: 200,
+        easing: "ease-out",
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: false,
+        rtl: false,
+    });
+
+    // Sélection des boutons
+    const prev = document.querySelector("#avant");
+    const next = document.querySelector("#apres");
+
+    // Ajout des boutons
+    prev.addEventListener("click", function () {
+        siemaInstance.prev();
+    });
+    next.addEventListener("click", function () {
+        siemaInstance.next();
+    });
+    
+     // Fonction pour passer automatiquement au slide suivant
+    function passerAuSlideSuivant() {
+    // Vérifier si nous sommes sur la dernière slide
+    if (siemaInstance.currentSlide === siemaInstance.innerElements.length - 1) {
+        // Si oui, naviguer à la première slide
+        siemaInstance.goTo(0);
+    } else {
+        // Sinon, passer simplement au slide suivant
+        siemaInstance.next();
+    }
+}
+
+    // Appeler la fonction toutes les 5 secondes (5000 millisecondes)
+    // setInterval(passerAuSlideSuivant, 5000);
+
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+/* RUBRIQUE PORTFOLIO */
+
+.rubrique-portfolio {
+    margin-top: 50px;
+}
+
+.menu-portfolio {
+    text-align: center;
+}
+
+#graphisme {
+    display: block;
+}
+
+#dessin-portfolio {
+    display: none;
+}
+
+#entreprise {
+    display: none;
+}
+
+#photographie-portfolio {
+    display: none;
+}
+
+#animation {
+    display: none;
+}
+
+#btn-graphisme,
+#btn-dessin,
+#btn-entreprise,
+#btn-photographie-portfolio,
+#btn-animation {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0px 0px;
+    border: 3px solid #303030;
+    background: #424242;
+    color: white;
+    font-family: 'raleway';
+    transition: 0.5s;
+    position: relative;
+
+}
+
+#btn-graphisme:hover {
+    background: #303030;
+}
+
+#btn-dessin:hover {
+    background: #303030;
+}
+
+#btn-entreprise:hover {
+    background: #303030;
+}
+
+#btn-photographie-portfolio:hover {
+    background: #303030;
+}
+
+#btn-animation:hover {
+    background: #303030;
+}
+
+#graphisme,
+#dessin-portfolio,
+#entreprise,
+#photographie-portfolio,
+#animation {
+    margin-top: 30px;
+}
+
+.aller,
+.aller-portrait {
+    display: flex;
+}
+
+.fond-clair {
+    max-width: 50%;
+}
+
+.texte-portfolio {
+    max-width: 50%;
+    display: flex;
+    flex-grow: 1; /* Permet au fond de prendre toute la hauteur disponible */
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+}
+
+.texte-projet {
+    padding: 15%;
+}
+
+.texte-projet p {
+    color: white;
+    font-family: 'raleway';
+    font-weight: 200;
+    font-size: 12px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.fond-fonce {
+    max-width: 50%;
+    display: flex;
+    /* flex-grow: 1; Permet au fond de prendre toute la hauteur disponible */
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+}
+
+.fond-fonce img,
+.fond-clair img,
+.fond-clair video,
+.fond-fonce video {
+    max-width: 70%;
+    margin: 30px;
+}
+
+.aller-portrait img{
+    width: 50%;
+}
+
+.siema-portfolio-slider {
+    transition: transform 0.5s ease; /* Transition pour le déplacement */
+}
+
+.retour{
+    position: relative;
+    width: 50%;
+}
+
+.bouton2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton2 button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: #424242;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
