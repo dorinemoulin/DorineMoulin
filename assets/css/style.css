@@ -1321,6 +1321,8 @@ ul li a {
     margin-top: 50px ;
     font-family: 'raleway';
     font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .texte-projet:hover{
