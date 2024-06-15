@@ -3,6 +3,11 @@
     src: url('../fonts/Charlotte.woff') format('woff'),
 }
 
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'),
+}
+
 * {
     margin: 0;
     padding: 0;
