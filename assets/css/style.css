@@ -463,7 +463,7 @@ h3 {
 .labo .titre,
 .labo .description {
     position: relative;
-    z-index: 3; /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
+    z-index: 3; 
 }
 
 
@@ -489,7 +489,6 @@ h3 {
 .mlc .description {
     position: relative;
     z-index: 3;
-    /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
 }
 
 .bureau-etude {
@@ -515,7 +514,6 @@ h3 {
 .bureau-etude .description {
     position: relative;
     z-index: 3;
-    /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
 }
 
 .cidrerie {
@@ -542,7 +540,6 @@ h3 {
 .cidrerie .description {
     position: relative;
     z-index: 3;
-    /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
 }
 
 .description {
@@ -575,26 +572,6 @@ h3 {
 .cidrerie:hover .description {
     opacity: 1;
 }
-
-/* @media  and (max-width: 640px) {
-
-    .experience {
-        display: flex;
-        height: auto;
-        flex-direction: column;
-    }
-    
-    .labo, .mlc, .bureau-etude, .cidrerie {
-        width: 100%;  
-        height: 200px;  
-        margin-bottom: 20px;  
-    }
-    
-    .labo::before, .mlc::before, .bureau-etude::before, .cidrerie::before {
-        opacity: 1;  
-    }
-
-} */
 
 /* LOISIRS */
 
@@ -696,6 +673,7 @@ h3 {
         align-items: center;
         height: auto;
         margin-bottom: 50px;
+        gap: 20px;
     }
 
     .titre {
@@ -708,19 +686,49 @@ h3 {
         opacity: 1;
     }
 
-    .labo::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 400px;
-        height: auto;
-        background-image: url(../image/experience/lilano.jpg);
-        background-size: cover;
-        background-position: center;
-        opacity: 0.5;
+    .labo,
+    .mlc,
+    .bureau-etude,
+    .cidrerie {
+        width: 80%;
+        height: 150px;
+        position: relative;
     }
 
+    .labo::before {
+        background-image: url(../image/experience/lilano.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .mlc::before {
+        background-image: url(../image/experience/MLC.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    
+    .bureau-etude::before {
+        background-image: url(../image/experience/fives\ nordon.jpeg);
+        background-size: cover;
+        background-position: center; 
+    
+    }
+
+    .cidrerie::before {
+        background-image: url(../image/experience/lesvergers.jpg);
+        background-size: cover;
+        background-position: center;  
+    
+    }
+
+    .titre{
+        margin-top: 20px;
+    }
+
+    .description{
+        margin-bottom: 20px;
+    }
     .loisir {
         flex-direction: column;
         align-items: center;
