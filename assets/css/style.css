@@ -703,6 +703,19 @@ h3 {
         opacity: 1;
     }
 
+    .labo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: auto;
+        background-image: url(../image/experience/lilano.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+    }
+
     .loisir {
         flex-direction: column;
         align-items: center;
@@ -1377,12 +1390,10 @@ ul li a {
 
 .prev {
     left: 10px;
-    /* z-index: 10; */
 }
  
 .next {
     right: 10px;
-    /* z-index: 3; */
 }
 
 #slider button{
@@ -1484,19 +1495,20 @@ button.next {
 
 
 @media screen and (max-width: 640px) {
-.aller{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+.aller,
 .retour{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* .retour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 #btn-graphisme {
     border-radius: 20px 0px 0px 0px;
@@ -1514,6 +1526,11 @@ button.next {
 #btn-photographie-portfolio {
     margin-top: 2px;
     border-radius: 0px 0px 20px 0px;
+}
+
+.fond-clair,
+.fond-fonce{
+    max-width: 100%;
 }
 
 }
