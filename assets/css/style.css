@@ -120,7 +120,7 @@ header #hbg span:last-child{
 
 @media screen and (max-width: 640px) {
     .container{
-		width: 800px;
+		width: 600px;
 	}
 
     header #hbg{
@@ -1028,6 +1028,12 @@ textarea {
     font-family: 'raleway';
 }
 
+
+.telephone {
+    color: inherit; 
+    text-decoration: none;
+}
+
 .btn3 {
     width: 150px;
     height: 40px;
@@ -1507,13 +1513,6 @@ button.next {
     justify-content: center;
     align-items: center;
 }
-
-/* .retour{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 #btn-graphisme {
     border-radius: 20px 0px 0px 0px;

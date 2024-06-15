@@ -208,14 +208,16 @@
     <div id="footer">
         <h2>Me contacter</h2>
         <div class="contact">
-            <form action="" method="POST" class="formulaire">
+            <form action="" method="POST" class="formulaire" name="contact" netlify>
 
-                <input type="text" name="nom" placeholder="Votre nom">
-                <input type="email" email="nom" placeholder="Votre adresse mail">
-                <input type="text" name="objet" placeholder="Objet de la demande">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <input type="hidden" name="form-name" value="contact">
+                
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre adresse mail" required>
+                <input type="text" name="objet" placeholder="Objet de la demande" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                 <button class="btn3" type="submit">Envoyer</button>
-
+            
             </form>
             <div class="info">
                 <h4>Infos</h4>
@@ -226,7 +228,8 @@
                     </div>
                     <div class="tel">
                         <img class="svg" src="assets/icones//phone-solid.svg" alt="">
-                        <p>06 41 24 09 53 </p>
+                        <span class="telephone">06 41 24 09 53</span>
+                        <!-- <p>06 41 24 09 53 </p> -->
                     </div>
                     <div class="localisation">
                         <img class="svg" src="assets/icones/location-dot-solid.svg" alt="">
