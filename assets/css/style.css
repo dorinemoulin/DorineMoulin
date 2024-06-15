@@ -268,8 +268,8 @@ header #hbg span:last-child{
         padding-bottom: 5px;
         border-radius: 50px;
         border: 2px solid #303030;
-        margin-top: 280px;
-        margin-right: 80px;
+        margin-top: 270px;
+        margin-right: 125px;
         transition: 0.6s;
         text-align: center;
     }
@@ -390,28 +390,29 @@ html {
     }
 
     .slide img {
-        width: 80%;
+        width: 100%;
     }
 
     .bouton {
         position: absolute;
         top: 50%;
-        left: 5%;
-        width: 90%;
+        left: -12%;
+        width: auto;
     }
 
     .bouton button {
         width: 30px;
         height: 30px;
+        border-radius: 50%;
         margin-right: 120px;
         margin-left: 120px;
     }
 
     .slide1 p{
-        width: 20%;
-        height: auto;
+        display: none;
     }
 }
+
 /* expérience */
 
 .experience {
@@ -455,8 +456,7 @@ h3 {
 .labo .titre,
 .labo .description {
     position: relative;
-    z-index: 3;
-    /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
+    z-index: 3; /* Permet de définir le niveau de priorité/ la couche de l'element par rapport aux autres */
 }
 
 
@@ -569,25 +569,25 @@ h3 {
     opacity: 1;
 }
 
-@media  and (max-width: 640px) {
+/* @media  and (max-width: 640px) {
 
     .experience {
         display: flex;
-        flex-direction: column
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .labo, .mlc, .bureau-etude, .cidrerie {
+        width: 100%;  
+        height: 200px;  
+        margin-bottom: 20px;  
+    }
+    
+    .labo::before, .mlc::before, .bureau-etude::before, .cidrerie::before {
+        opacity: 1;  
     }
 
-    .labo::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../image/experience/lilano.jpg);
-        background-size: cover;
-        background-position: center;
-        opacity: 0.5;
-    }
-}
+} */
 
 /* LOISIRS */
 
@@ -622,6 +622,7 @@ h3 {
     flex-direction: column;
     text-align: center;
 }
+
 
 /* COMPETENCE */
 
@@ -686,13 +687,25 @@ h3 {
     .experience {
         flex-direction: column;
         align-items: center;
+        height: auto;
         margin-bottom: 50px;
+    }
+
+    .titre {
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .description{
+        opacity: 1;
     }
 
     .loisir {
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+        gap: 50px;
     }
 
     .competence .haut {
@@ -935,6 +948,15 @@ h3 {
         width: 60%;
     }
 
+    .texte-grille{
+        opacity: 1;
+        text-align: center;
+    }
+
+    .grille img{
+        opacity: 0.5;
+    }
+
 }
 
 /* CONTACT */
@@ -1047,6 +1069,27 @@ h4 {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        gap: 30px;
+    }
+
+    .info {
+        background: linear-gradient(45deg, rgba(136, 14, 79, 0.7), rgba(191, 54, 12, 0.7));
+        border-radius: 30px;
+        width: 70%;
+        height: auto;
+        padding: 40px;
+        margin-left: 0;
+    }
+    
 }
 
 /* MENTION */

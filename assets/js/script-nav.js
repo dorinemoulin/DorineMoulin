@@ -27,7 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const hbg = document.querySelector('#hbg');
 
     hbg.addEventListener('click', function (e) {
-        e.preventDefault(); // Empêche le comportement par défaut du lien
+        e.preventDefault();
+        header.classList.toggle('open');
+    });
+
+    hbg.addEventListener('touchstart', function (e) {
+        e.preventDefault(); 
         header.classList.toggle('open');
     });
 });
