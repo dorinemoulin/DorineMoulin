@@ -401,18 +401,19 @@ html {
     .bouton {
         position: absolute;
         top: 50%;
-        left: 5%;
-        width: auto;
+        left: 0;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        gap: 50%;
     }
 
     .bouton button {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        margin-right: 120px;
-        margin-left: 120px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .slide1 p{
