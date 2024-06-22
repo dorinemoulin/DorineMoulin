@@ -1327,6 +1327,14 @@ ul li a {
     overflow: visible;
 }
 
+#photographie-portfolio video{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
 .carousel {
     display: flex;
     justify-content: baseline;
