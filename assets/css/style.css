@@ -29,7 +29,7 @@ h2 {
     color: white;
     font-family: 'charlotte';
     font-weight: lighter;
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -77,7 +77,7 @@ header nav a {
 header .a {
     color: white;
     font-family: 'raleway';
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400; /* Typo regular */
 }
 
@@ -209,7 +209,7 @@ header #hbg span:last-child{
     font-family: 'raleway';
     font-weight: 400;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn1:hover{
@@ -366,7 +366,7 @@ html {
     color: white;
     font-family: 'raleway';
     font-weight: 300;
-    font-size: 13px;
+    font-size: 14px;
     background-color: #424242;
     opacity: 0.8;
     border-radius: 10px;
@@ -966,7 +966,7 @@ h3 {
     font-family: 'raleway';
     font-weight: 400;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn2:hover{
@@ -1467,14 +1467,14 @@ ul li a {
     margin-top: 50px ;
     font-family: 'raleway';
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .texte-projet p{
     margin-top: 50px ;
     font-family: 'raleway';
     font-weight: 200;
-    font-size: 12px;
+    font-size: 13px;
     margin-left: 20px;
     margin-right: 20px;
 }
