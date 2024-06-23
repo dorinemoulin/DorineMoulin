@@ -22,14 +22,14 @@ h1 {
     color: white;
     font-family: 'raleway';
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 h2 {
     color: white;
     font-family: 'charlotte';
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -1086,7 +1086,7 @@ h4 {
     color: white;
     font-family: 'charlotte';
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .coordonnees {
