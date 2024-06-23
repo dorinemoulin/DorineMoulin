@@ -459,7 +459,7 @@ h3 {
     background-image: url(../image/experience/lilano.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .labo .titre,
@@ -484,7 +484,7 @@ h3 {
     height: 100%;
     background-image: url(../image/experience/MLC.jpg);
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .mlc .titre,
@@ -508,7 +508,7 @@ h3 {
     height: 100%;
     background-image: url(../image/experience/fives\ nordon.jpeg);
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.3;
 
 }
 
@@ -534,7 +534,7 @@ h3 {
     background-image: url(../image/experience/lesvergers.jpg);
     background-size: cover;
     background-position-x: center;
-    opacity: 0.5;
+    opacity: 0.3;
 
 }
 
