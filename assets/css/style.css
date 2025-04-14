@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'charlotte';
-    src: url('../assets/fonts/Charlotte.otf');
+    src: url('/assets/fonts/Charlotte.otf');
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url('../assets/fonts/Raleway-VariableFont_wght.ttf');
+    src: url('/assets/fonts/Raleway-VariableFont_wght.ttf');
 }
-
 :root{
     --primary-color: #424242;
     --secondary-color: #303030;
@@ -461,10 +460,6 @@ body.open #hbg span:nth-child(3) {
    .carousel{
     justify-content: center;
    }
-
-   @media screen and (max-width: 760px) {
-    
-    }
 }
 
 /* EXPERIENCE */
@@ -503,10 +498,10 @@ body.open #hbg span:nth-child(3) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/img/lilano.jpg);
+    background-image: url(/assets/image/lilano.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Rend l'image de fond semi-transparente */
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -528,10 +523,10 @@ body.open #hbg span:nth-child(3) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/img/mlc.jpg);
+    background-image: url(/assets/image/mlc.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Rend l'image de fond semi-transparente */
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -553,10 +548,10 @@ body.open #hbg span:nth-child(3) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/img/fives\ nordon.jpeg);
+    background-image: url(/assets/image/fives\ nordon.jpeg);
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Rend l'image de fond semi-transparente */
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -578,7 +573,7 @@ body.open #hbg span:nth-child(3) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/img/lesvergers.jpg);
+    background-image: url(/assets/image/lesvergers.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.5; 
@@ -615,7 +610,6 @@ body.open #hbg span:nth-child(3) {
     visibility: visible;
     transform: translateX(0%) translateY(20px);
 }
-
 
 .section-entreprise > div:hover .entreprise {
     transform: translate(-50%, -100%);
@@ -681,7 +675,7 @@ body.open #hbg span:nth-child(3) {
 }
 
 .container-picto:hover .picto {
-    opacity: 0; /* Le SVG disparaît au survol */
+    opacity: 0; 
 }
 
 .picto-text {
@@ -689,8 +683,8 @@ body.open #hbg span:nth-child(3) {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    opacity: 0; /* Le texte est caché au départ */
-    transition: opacity 0.5s ease; /* Animation pour l'apparition du texte */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
     transform: rotateY(180deg);
 }
 
@@ -701,7 +695,7 @@ body.open #hbg span:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    opacity: 1; 
 }
 
 /* RESPONSIVE LOISIR  */
@@ -787,25 +781,6 @@ body.open #hbg span:nth-child(3) {
     height: auto;
 }
 
-/* .card-bord-right{
-    display: flex;
-    align-items: center;
-    width: 230px;
-    height: 120px;
-    padding: 10px;
-    border-radius: 0 30px 0 0;
-    background: var(--secondary-color);
-}
-
-.card-bord-left{
-    display: flex;
-    align-items: center;
-    width: 230px;
-    height: 120px;
-    padding: 10px;
-    border-radius: 0 0 0 30px;
-} */
-
 /* RESPONSIVE COMPETENCES  */
 @media screen and (max-width: 1000px) {
     .haut{
@@ -885,50 +860,6 @@ body.open #hbg span:nth-child(3) {
 .wide {
     grid-column: 2 / 4; 
 }
-
-/* .block {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.block img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-.block:hover img {
-    transform: scale(1.1);
-    filter: brightness(0.5);
-}
-
-.block::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.block .text-overlay {
-    position: absolute;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.block:hover::after {
-    opacity: 1; 
-}
-
-.block:hover .text-overlay {
-    opacity: 1; 
-} */
 
 /* FOOTER */
 
@@ -1067,104 +998,6 @@ textarea {
     padding-top: 50px;
 }
 
-/* .menu-portfolio{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#menu-1,
-#menu-2,
-#menu-3,
-#menu-4,
-#menu-5 {
-    width: 150px;
-    height: 30px;
-    margin-top: 20px;
-    border-radius: 20px 20px 0px 0px;
-    border: 3px solid var(--secondary-color);
-    background: var(--primary-color);
-    color: white;
-    font-family: 'raleway';
-    transition: 0.5s;
-    position: relative;
-}
-
-#menu-1:hover {
-    background: var(--secondary-color);
-}
-
-#menu-2:hover {
-    background: var(--secondary-color);
-}
-
-#menu-3:hover {
-    background: var(--secondary-color);
-}
-
-#menu-4:hover {
-    background: var(--secondary-color);
-}
-
-#menu-5:hover {
-    background: var(--secondary-color);
-}
-
-.aller{
-    display: flex;
-}
-
-.retour{
-    display: flex;
-}
-
-.fond-clair,
-.fond-fonce {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
-    padding: 30px;
-    gap: 10px;
-}
-
-.fond-fonce{
-    background: var(--secondary-color);
-    display: flex;
-}
-
-.carousel-ptf {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    width: 100%;  
-    height: 100%; 
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
-}
-
-.carousel-ptf img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-}
-
-.fleche:first-of-type {
-    left: 10px; 
-}
-
-.fleche:last-of-type {
-    right: 10px;
-}
-
-.fleche:hover {
-    fill: #666; 
-} */
-
-
  .portfolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1221,14 +1054,14 @@ textarea {
 
 .icons {
     display: flex;
-    gap: 15px; /* Espacement entre les icônes */
+    gap: 15px;
     justify-content: center;
 }
 
 .icons .svg-icon {
-    width: 10px;  /* Taille des icônes */
+    width: 10px; 
     height: 10px;
-    fill: var(--secondary-color);  /* Couleur de l'icône */
+    fill: var(--secondary-color);
     transition: transform 0.3s ease;
 }
 
