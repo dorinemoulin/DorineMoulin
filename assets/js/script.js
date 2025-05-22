@@ -1,8 +1,17 @@
-const hbg = document.getElementById('hbg');
+const menuToggle = document.getElementById('hbg');
     const menu = document.querySelector('.menu');
 
-    hbg.addEventListener('click', () => {
+    menuToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        menu.classList.toggle('open');
         document.body.classList.toggle('open');
+    });
+
+    const menuLinks = document.querySelectorAll('.menu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('open');
+        });
     });
 
 
