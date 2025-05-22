@@ -141,15 +141,14 @@ header .menu .linkedin{
     height: 3px;
     background: var(--color-white);
     border-radius: 5px;
-    margin: 4px 0;
+    margin: 5px 0;
     position: relative;
     transition: all 0.3s ease;
-    
 }
 
 body.open #hbg span:nth-child(1) {
     transform: rotate(45deg);
-    top: 10px;
+    top: 8px; 
 }
 
 body.open #hbg span:nth-child(2) {
@@ -158,21 +157,7 @@ body.open #hbg span:nth-child(2) {
 
 body.open #hbg span:nth-child(3) {
     transform: rotate(-45deg);
-    top: 10px;
-}
-
-body.open #hbg span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 7px; 
-}
-
-body.open #hbg span:nth-child(2) {
-    opacity: 0;
-}
-
-body.open #hbg span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: -7px; 
+    top: -8px; 
 }
 
 /* MENU  RESPONSIVE*/
