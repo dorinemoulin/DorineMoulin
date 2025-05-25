@@ -20,28 +20,125 @@ document.addEventListener("DOMContentLoaded", function () {
     const formations = document.querySelectorAll(".formation-1");
     const prevButton = document.querySelectorAll(".fleche")[0];
     const nextButton = document.querySelectorAll(".fleche")[1];
+    const counter = document.getElementById("counter");
 
     let index = 0;
-    const total = formations.length;
-    const visibleItems = 4; 
-    const gap = 90; 
-    const itemWidth = formations[0].offsetWidth + gap;
 
-    function updateCarousel() {
-        carousel.style.transform = `translateX(${-index * itemWidth}px)`;
+    function isMobile() {
+        return window.innerWidth <= 768;
     }
 
-    nextButton.addEventListener("click", function () {
-        index = (index + 1) % (total - visibleItems + 1);
+    function updateCarousel() {
+        if (isMobile()) {
+            // Mode mobile : afficher seulement le bloc actif
+            formations.forEach((formation, i) => {
+                formation.classList.remove('active');
+                if (i === index) {
+                    formation.classList.add('active');
+                }
+            });
+        } else {
+            // Mode desktop : ton système existant
+            const itemWidth = formations[0].offsetWidth + parseInt(getComputedStyle(carousel).gap || 0);
+            const visibleItems = 4;
+            const maxIndex = formations.length - visibleItems;
+                    
+            // Limiter l'index pour desktop
+            if (index > maxIndex) index = maxIndex;
+                    
+            const offset = index * itemWidth;
+            carousel.style.transform = `translateX(-${offset}px)`;
+                    
+            // Remettre tous les blocs visibles en desktop
+            formations.forEach(formation => {
+                formation.classList.remove('active');
+            });
+        }
+                
+        // Mettre à jour le compteur
+        if (counter) {
+            counter.textContent = index + 1;
+        }
+    }
+
+    // Gestion des clics flèches (desktop)
+    nextButton.addEventListener("click", () => {
+        if (isMobile()) {
+            if (index < formations.length - 1) {
+                index++;
+            }
+        } else {
+            const maxIndex = formations.length - 4;
+            if (index < maxIndex) {
+                index++;
+            } else {
+                index = 0; // Retour au début
+            }
+        }
         updateCarousel();
     });
 
-    prevButton.addEventListener("click", function () {
-        index = (index - 1 + (total - visibleItems + 1)) % (total - visibleItems + 1);
+    prevButton.addEventListener("click", () => {
+        if (isMobile()) {
+            if (index > 0) {
+                index--;
+            }
+        } else {
+            const maxIndex = formations.length - 4;
+            if (index > 0) {
+                index--;
+            } else {
+                index = maxIndex; // Aller à la fin
+            }
+        }
         updateCarousel();
     });
 
-    updateCarousel(); // Initialiser l'affichage
+    // Gestion du touch (mobile uniquement)
+    let startX = 0;
+    let isDragging = false;
+
+    carousel.addEventListener("touchstart", (e) => {
+        if (!isMobile()) return;
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    carousel.addEventListener("touchmove", (e) => {
+        if (!isDragging || !isMobile()) return;
+        e.preventDefault();
+    });
+
+    carousel.addEventListener("touchend", (e) => {
+        if (!isDragging || !isMobile()) return;
+                
+        const endX = e.changedTouches[0].clientX;
+        const delta = startX - endX;
+        isDragging = false;
+
+        if (Math.abs(delta) > 50) {
+            if (delta > 0 && index < formations.length - 1) {
+                // Swipe vers la gauche = suivant
+                index++;
+            } else if (delta < 0 && index > 0) {
+                // Swipe vers la droite = précédent
+                index--;
+            }
+            updateCarousel();
+        }
+    });
+
+    // Réajustement au redimensionnement
+    window.addEventListener("resize", () => {
+        // Réinitialiser si on change de mode
+        if (isMobile() && index >= formations.length) {
+            index = formations.length - 1;
+        }
+        updateCarousel();
+    });
+
+    // Initialisation
+    updateCarousel();
 });
 
 
